@@ -34,7 +34,7 @@ const EditProfile = () => {
   useEffect(() => {
 
 
-    axios.get("http://127.0.0.1:3000/contactmsyt/getprofile", {
+    axios.get("https://cms-server-snowy.vercel.app/contactmsyt/getprofile", {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -78,7 +78,7 @@ const EditProfile = () => {
     if (errs.name === "" && errs.email === "") {
 
 
-      axios.put("http://127.0.0.1:3000/contactmsyt/editprofile/", values,
+      axios.put("https://cms-server-snowy.vercel.app/contactmsyt/editprofile/", values,
         {
           headers: {
             Authorization: `Berear ${localStorage.getItem("token")}`

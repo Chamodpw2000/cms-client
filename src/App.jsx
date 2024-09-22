@@ -80,7 +80,7 @@ const App = () => {
 
   const [user,setUser]= useState();
   useEffect(()=> {
-    axios.get("http://127.0.0.1:3000/contactmsyt/verify",{
+    axios.get("https://cms-server-snowy.vercel.app/contactmsyt/verify",{
       headers:{
         Authorization: `Berear ${localStorage.getItem("token")}`
       }
