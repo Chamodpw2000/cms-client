@@ -33,7 +33,7 @@ const AddContact = () => {
     setErrors(errs)
     if (errs.name === "" && errs.email === "" && errs.phone === "") {
 
-      axios.post("https://cms-server-snowy.vercel.app/addcontact", values,
+      axios.post("https://cms-server-snowy.vercel.app/contactmsyt/addcontact", values,
         {
           headers: {
             Authorization: `Berear ${localStorage.getItem("token")}`
