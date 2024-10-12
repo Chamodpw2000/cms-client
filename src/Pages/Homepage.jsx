@@ -12,7 +12,7 @@ const Homepage = () => {
 
         <h1 className='home-title'>
 
-            CONTENT MANAGEMENT SYSTEM
+            CONTACT MANAGEMENT SYSTEM
         </h1>
 
         <p className='home-description'>
